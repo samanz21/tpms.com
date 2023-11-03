@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/styles/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles/register.css">
+  <title>Register Menu</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="../main/index.html">Home</a></li>
+      <li><a href="../main/about.html">About Us</a></li>
+      <li><a href="../main/login.html" class="rightmost">Log In</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sign Up Form -->
+
+  <div class="signupBox">
+    <form method="POST" action="">
+      <h2>Sign Up</h2>
+      <div class="userBox">
+        <label>Student Name</label>
+        <input type="text" name="name" required="">
+      </div>
+      <div class="userBox">
+        <label>Email</label>
+        <input type="email" name="email" required="">
+      </div>
+      <div class="userBox">
+        <label>Gender</label>
+        <select name="gender" required="">
+          <option value="" disabled selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="userBox">
+        <label>Date of Birth</label>
+        <input type="date" name="dob" required="">
+      </div>
+      <div class="userBox">
+        <label>Username</label>
+        <input type="text" name="username" required="">
+      </div>
+      <div class="userBox">
+        <label>Password</label>
+        <input type="password" name="password" required="">
+      </div>
+      <div class="center">
+        <button class="button buttonRegister" type="submit" name="submitbtn" style="font-size: 24px;">Register</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

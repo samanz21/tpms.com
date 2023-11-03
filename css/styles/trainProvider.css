@@ -1,0 +1,261 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F8B400;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; /* Align items to the right */
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav ul li a:hover {
+    background-color: #FAF5E4;
+    padding: 10px 15px;
+}
+
+li.signup a {
+    background-color: #FAF5E4; /* Replace with your desired color */
+    padding: 8px 13px; /* Adjust the padding as needed */
+}
+
+/* ---------------------------- */
+
+body {
+    background-color: #FAF5E4;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------trainprovideCreateCourse--------------- */
+
+.box-section {
+  position: fixed;
+  top: 49px;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background-color: #2C786C;
+  padding: 20px;
+}
+
+
+.profile {
+    text-align: center;
+    margin-bottom: 10%;
+    margin-top: 15%;
+  }
+  
+  .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color:#ffffff ;
+  }
+  
+  .profile h2 {
+    margin-top: 10px;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .options a {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #f5f5f5;
+    padding: 8px 0;
+    width: 110%;
+  }
+
+  #course-form {
+    margin-top: 4%;
+    margin-left: 45%;
+    font-size: 20px;
+}
+
+#course-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#course-form input[type="text"],
+#course-form input[type="date"],
+#course-form textarea,
+#course-form select {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#course-form textarea#course-desc {
+    width: 500px;
+    height: 150px;
+}
+
+#course-form .create-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #004445;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 27%;
+}
+  
+  
+  /* --------listCourse--------------- */
+
+  .dashboard-container {
+    margin-top: 10%;
+    width: 65%;
+    margin-left: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    height: fit-content;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.course-table th,
+.course-table td {
+  padding: 8px;
+  border: 1px solid #000000;
+}
+
+.course-table th {
+  background-color: #F8B400;
+  color: #FFFFFF;
+}
+  
+.edit-icon {
+  width: 30px;  /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  display: block;
+  margin: 0 auto;
+
+}
+
+.delete-icon {
+  width: 20px;  /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  display: block;
+  margin: 0 auto;
+
+}
+
+ /* --------TrainProviderRegisterInsructor-------------- */
+
+
+ #registerForm {
+  /* Styles for the form with ID "registerForm" */
+  position: relative;
+  top: 60vh;
+  left: 63.5%;
+  width: 45%;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 68, 69, .5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+
+}
+
+#registerForm h2 {
+  /* Styles for the heading within the form */
+  margin: 0 0 30px;
+  padding: 0;
+  color: #faf5e4;
+  text-align: center;
+}
+
+#registerForm input,
+#registerForm textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #faf5e4;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #faf5e4;
+    outline: none;
+    background: transparent;
+}
+
+#registerForm label {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #faf5e4;
+    pointer-events: none;
+    transition: .5s;
+}
+
+#registerForm input:focus ~ label,
+#registerForm input:valid ~ label,
+#registerForm textarea:focus ~ label,
+#registerForm textarea:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #f8b400;
+    font-size: 12px;
+}
+
+#registerForm input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    color: #f8b400;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background: #faf5e4;
+    cursor: pointer;
+    transition: background .5s;
+}
+
+#registerForm input[type="submit"]:hover {
+    background: #f8b400;
+    color: #fff;
+}
+

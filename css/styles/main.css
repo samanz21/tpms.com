@@ -1,0 +1,964 @@
+/*about.html*/
+.headingHome,
+.headingLogin,
+.headingAbout,
+.headingSignUp {
+  color: #004445;
+  text-align: center;
+}
+
+body {
+  background-color: #faf5e4;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*TOP NAVIGATION*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F8B400;
+  padding: 0;
+  margin: 0;
+  z-index: 9999; /* Higher z-index keep it on top  */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right; /* Align items to the right */
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  padding: 15px;
+}
+
+nav ul li a:hover {
+  background-color: #FAF5E4;
+  padding: 10px 15px;
+}
+
+li.signup a {
+  background-color: #FAF5E4; /* Replace with your desired color */
+  padding: 8px 13px; /* Adjust the padding as needed */
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F8B400;
+  padding: 0;
+  margin: 0;
+  z-index: 9999; /* Higher z-index keep it on top  */
+}
+
+/*Image header*/
+* {
+  box-sizing: border-box;
+}
+
+.signup-slide {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/*Intoduction*/
+/* Slideshow container */
+.signup-slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text*/
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px
+  }
+}
+
+/* End of Caption text */
+
+/* INTRODUCTION*/
+.intro {
+  background-color: #f8b400;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.intro-h2 {
+  color: #f2f2f2;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.intro-p {
+  color: #004445;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*END OF INTRODUCTION*/
+
+
+/*SERVICES*/
+.services-h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-box {
+  background-color: #f8b400;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.service-box h3 {
+  color: #f2f2f2;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.service-box p {
+  color: #004445;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*END OF SERVICES */
+
+/* BENEFIT */
+.benefit {
+  margin-bottom: 20px;
+}
+
+.benefit-h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.benefit-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 20px solid #faf5e4;
+}
+
+.benefit-table th,
+.benefit-table td {
+  padding: 10px;
+  text-align: center;
+  border: 20px solid #faf5e4;
+  background-color: rgb(255, 180, 0, .7);
+}
+
+/*END OF BENEFIT */
+
+
+.benefit-table th {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.benefit-table h3 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.benefit-table p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* END OF BENEFIT */
+
+/* SOCIAL MEDIA BOTTOM PART */
+footer {
+  position: relative;
+}
+
+ul.social-media {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin-top: -20%;
+  margin-bottom: -20%;
+  padding: 0;
+}
+
+ul.social-media li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+ul.social-media li a .fa {
+  font-size: 40px;
+  color: #262626;
+  line-height: 80px;
+  transition: 0.5s;
+  padding-right: 14px;
+}
+
+ul.social-media li a span {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  color: #262626;
+  letter-spacing: 4px;
+  transition: 0.5s;
+}
+
+ul.social-media li a {
+  text-decoration: none;
+  display: block;
+  width: 210px;
+  height: 80px;
+  background: #fff;
+  text-align: left;
+  padding-left: 20px;
+  transform: rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: 0.5s;
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+ul.social-media li a:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #b1b1b1;
+  transform: rotate(0deg) skewY(-45deg);
+}
+
+ul.social-media li a:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #b1b1b1;
+  transform: rotate(0deg) skewX(-45deg);
+}
+
+ul.social-media li a:hover {
+  transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+ul.social-media li:hover .fa {
+  color: #fff;
+}
+
+ul.social-media li:hover span {
+  color: #fff;
+}
+
+ul.social-media li:hover:nth-child(1) a {
+  background: #3b5998;
+}
+
+ul.social-media li:hover:nth-child(1) a:before {
+  background: #365492;
+}
+
+ul.social-media li:hover:nth-child(1) a:after {
+  background: #4a69ad;
+}
+
+ul.social-media li:hover:nth-child(2) a {
+  background: #00aced;
+}
+
+ul.social-media li:hover:nth-child(2) a:before {
+  background: #097aa5;
+}
+
+ul.social-media li:hover:nth-child(2) a:after {
+  background: #53b9e0;
+}
+
+ul.social-media li:hover:nth-child(3) a {
+  background: #dd4b39;
+}
+
+ul.social-media li:hover:nth-child(3) a:before {
+  background: #b33a2b;
+}
+
+ul.social-media li:hover:nth-child(3) a:after {
+  background: #e66a5a;
+}
+
+ul.social-media li:hover:nth-child(4) a {
+  background: #e4405f;
+}
+
+ul.social-media li:hover:nth-child(4) a:before {
+  background: #d81c3f;
+}
+
+ul.social-media li:hover:nth-child(4) a:after {
+  background: #e46880;
+}
+
+/* ABOUT.PHP file*/
+/* Card Container */
+.containermain {
+  display: flex;
+}
+
+.card-container1 {
+  perspective: 1000px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin: auto; */
+  margin-left: 17vw;
+  flex: 1;
+}
+
+.card-container2 {
+  perspective: 1000px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin-left: -100px;
+  /* margin: auto; */
+  flex: 1;
+}
+
+/* Card */
+.card {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+/* Front side of the card */
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 3px solid white;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 3px solid white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Front side styling */
+.front {
+  transform: rotateY(0deg);
+  background-color: #9cbcc1;
+}
+
+/* Back side styling */
+.back {
+  transform: rotateY(180deg);
+  background-color: #ffd86e;
+}
+
+/* Flip Animation */
+.card-container1:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-container2:hover .card {
+  transform: rotateY(180deg);
+}
+
+/* Heading styling */
+.vision-h2,
+.mission-h2,
+.timeline-h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Paragraph styling */
+.vision p,
+.mission p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #004445;
+  text-align: justify;
+}
+
+/*HISTORY*/
+* {
+  box-sizing: border-box;
+}
+
+/* Set a background color */
+.sec-timeline {
+  background-color: #ffd86e;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 50px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #61D4E8;
+  border: 4px solid #2DA1E7;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+/*END OF HISTORY
+
+/*LOG IN PAGE*/
+.loginBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 68, 69, .5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+}
+
+.loginBox h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #faf5e4;
+  text-align: center;
+}
+
+.loginBox .userBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #faf5e4;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #faf5e4;
+  outline: none;
+  background: transparent;
+}
+
+.loginBox .userBox label {
+  position: relative;
+  top: -10px;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #faf5e4;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.loginBox .userBox input:focus~label,
+.loginBox .userBox input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #f8b400;
+  font-size: 12px;
+}
+
+.loginBox form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #f8b400;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.loginBox a:hover {
+  background: #f8b400;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #f8b400,
+    0 0 25px #f8b400,
+    0 0 50px #f8b400,
+    0 0 100px #f8b400;
+}
+
+.loginBox a span {
+  position: absolute;
+  display: block;
+}
+
+.loginBox a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f8b400);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.loginBox a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #f8b400);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.loginBox a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #f8b400);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.loginBox a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #f8b400);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+/*SIGN UP PAGE*/
+.signupBox {
+  position: absolute;
+  top: 55vh;
+  left: 50%;
+  width: 50%;
+  padding: 40px;
+  margin-bottom: 10px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 68, 69, .5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+}
+
+.signupBox h2 {
+  font-size: 32px;
+  margin: 0 0 30px;
+  padding: 0;
+  color: #faf5e4;
+  text-align: center;
+}
+
+.signupBox .userBox input,
+.signupBox .userBox select {
+  width: 100%;
+  padding: px 0;
+  font-size: 16px;
+  color: #faf5e4;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #faf5e4;
+  outline: none;
+  background: transparent;
+}
+
+.signupBox .userBox select option {
+  width: 100%;
+  padding: px 0;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #faf5e4;
+  outline: none;
+  background: transparent;
+}
+
+.signupBox .userBox label {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #faf5e4;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.signupBox .userBox input:focus~label,
+.signupBox .userBox input:valid~label,
+.signupBox .userBox select:focus~label,
+.signupBox .userBox select:valid~label {
+  top: -20px;
+  left: 0;
+  color: #f8b400;
+  font-size: 12px;
+}
+
+.signupBox form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #f8b400;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.signupBox a:hover {
+  background: #f8b400;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #f8b400,
+    0 0 25px #f8b400,
+    0 0 50px #f8b400,
+    0 0 100px #f8b400;
+}
+
+.signupBox a span {
+  position: absolute;
+  display: block;
+}
+
+.signupBox a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f8b400);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.signupBox a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #f8b400);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.signupBox a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #f8b400);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.signupBox a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #f8b400);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+/*END OF SIGN UP PAGE*/

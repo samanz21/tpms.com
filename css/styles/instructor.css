@@ -1,0 +1,262 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F8B400;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  /* Align items to the right */
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  padding: 15px;
+}
+
+nav ul li a:hover {
+  background-color: #FAF5E4;
+  padding: 10px 15px;
+}
+
+li.signup a {
+  background-color: #FAF5E4;
+  /* Replace with your desired color */
+  padding: 8px 13px;
+  /* Adjust the padding as needed */
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #F8B400;
+  border-radius: 8px;
+}
+
+.button3:hover {
+  background-color: #F8B400;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  color: white;
+}
+
+/* ---------------------------- */
+
+body {
+  background-color: #FAF5E4;
+}
+
+/* --------trainprovideCreateCourse--------------- */
+
+.box-section {
+  position: fixed;
+  top: 49px;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background-color: #2C786C;
+  padding: 20px;
+}
+
+
+.profile {
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 15%;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #ffffff;
+}
+
+.profile h2 {
+  margin-top: 10px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.options a {
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f5f5f5;
+  padding: 8px 0;
+  width: 110%;
+}
+
+form {
+  margin-top: 4%;
+  margin: auto;
+  font-size: 20px;
+
+}
+
+#course-form {
+  margin-top: 4%;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 10px;
+
+}
+
+form textarea#course-desc {
+  width: 500px;
+  height: 150px;
+}
+
+.create-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #004445;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 35%;
+}
+
+.create-button-course {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #004445;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 41%;
+}
+
+.create-button:hover {
+  background-color: #2C786C;
+}
+
+
+/* --------listCourse--------------- */
+
+.dashboard-container {
+  margin-top: 7vh;
+  margin-bottom: 5vh;
+  width: 65%;
+  margin-left: 30%;
+  background-color: #ffffff;
+  padding: 20px;
+  height: fit-content;
+}
+
+.dashboard-profile-container {
+  margin-top: 7vh;
+  width: 60%;
+  margin-left: 33%;
+  background-color: #ffffff;
+  padding: 20px;
+  height: fit-content;
+}
+
+.course-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.lesson-icon {
+  width: 30px;  /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  display: block;
+  margin: 0 auto;
+}
+
+.update-icon {
+  width: 30px;  /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  display: block;
+  margin: 0 auto;
+}
+
+.course-table th,
+.course-table td {
+  padding: 8px;
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+.course-table th {
+  background-color: #F8B400;
+  color: #FFFFFF;
+}
+
+.instructor-section {
+  margin-top: 10%;
+  width: 65%;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  height: fit-content;
+  text-align: center;
+  border: 3px solid black;
+}
+
+.menu-table {
+  text-align: center;
+  width: 65%;
+  margin: auto;
+}
+
+.student-details img{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #ffffff;
+}
